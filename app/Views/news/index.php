@@ -10,7 +10,7 @@
             <?= esc($news_item['body']) ?>
         </div>
         <p>
-            <!-- <a href="/news/<?= esc($news_item['slug'], 'url') ?>">View article</a> -->
+            <!-- <a href="/news/ <?= esc($news_item['slug'], 'url') ?>">View article</a> -->
             <a href="<?= site_url('news/' . esc($news_item['slug'], 'url')) ?>">View Article</a>
 
         </p>

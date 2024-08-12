@@ -11,10 +11,12 @@ use App\Controllers\News;
  */
 $routes->get('/', 'Home::index');
 
+// The four routes below are for the news blog
 $routes->get('news', [News::class, 'index']);
 
+//These two handle the Create News Item logic
 $routes->get('news/new', [News::class, 'new']);
-$routes->post('news', [News::class, 'create']);
+$routes->post('news', [News::class, 'create']); 
 
 $routes->get('news/(:segment)', [News::class, 'show']);
 
